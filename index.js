@@ -66,6 +66,7 @@ const Barrage = class {
     }
     runServer() {
         let _this = this
+        console.log('join: ' + this.option.join)
         if (this.option.join) {
             this.observer = new MutationObserver((mutationsList) => {
                 for (let mutation of mutationsList) {
